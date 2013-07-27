@@ -7,8 +7,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aospz/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospz/overlay/dictionaries
 
 PRODUCT_PACKAGES += \
-    Superuser \
-    su \
     Torch \
     LockClock \
     CMFileManager \
@@ -29,6 +27,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aospz/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml \
     vendor/aospz/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
+	
+# SU
+PRODUCT_COPY_FILES += \
+    vendor/aospz/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/aospz/prebuilt/common/bin/.ext/.su:system/bin/.ext/.su \
+	vendor/aospz/prebuilt/common/xbin/su:system/xbin/su \
+	vendor/aospz/prebuilt/common/xbin/daemonsu:system/xbin/daemonsu \
+	vendor/aospz/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
 
 # init.d
 PRODUCT_COPY_FILES += \
