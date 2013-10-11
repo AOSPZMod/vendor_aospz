@@ -1,5 +1,3 @@
-# Inherit gapps
-$(call inherit-product, vendor/gapps/gapps-vendor-blobs.mk)
 
 # Inherit AOSPZ device configuration for mako
 $(call inherit-product, device/lge/mako/full_mako.mk)
