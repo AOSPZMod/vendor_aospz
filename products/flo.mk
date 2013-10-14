@@ -1,8 +1,8 @@
 # Inherit AOSPZ common bits
-$(call inherit-product, vendor/aokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/aospz/configs/common_tablet.mk)
 
 # Inherit AOSPZ device configuration for mako
-$(call inherit-product, device/lge/mako/full_flo.mk)
+$(call inherit-product, device/asus/flo/full_flo.mk)
 
 # Setup device specific product configuration
 PRODUCT_NAME := aospz_flo
