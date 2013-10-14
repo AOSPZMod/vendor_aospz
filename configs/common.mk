@@ -7,12 +7,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aospz/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aospz/overlay/dictionaries
 
 PRODUCT_PACKAGES += \
-	Superuser \
-    Torch \
-    LockClock \
+    Superuser \
     CMFileManager \
-    Apollo
-
+    
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
@@ -32,9 +29,9 @@ PRODUCT_COPY_FILES += \
 # SU
 PRODUCT_COPY_FILES += \
     vendor/aospz/prebuilt/common/bin/.ext/.su:system/bin/.ext/.su \
-	vendor/aospz/prebuilt/common/xbin/su:system/xbin/su \
-	vendor/aospz/prebuilt/common/xbin/daemonsu:system/xbin/daemonsu \
-	vendor/aospz/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
+    vendor/aospz/prebuilt/common/xbin/su:system/xbin/su \
+    vendor/aospz/prebuilt/common/xbin/daemonsu:system/xbin/daemonsu \
+    vendor/aospz/prebuilt/common/etc/install-recovery.sh:system/etc/install-recovery.sh
 
 # init.d
 PRODUCT_COPY_FILES += \
@@ -65,12 +62,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Scarabaeus.ogg \
     ro.config.notification_sound=Antimony.ogg \
     ro.config.alarm_alert=Scandium.ogg
-
-#DSP Manager
-PRODUCT_PACKAGES += \
-    audio_effects.conf \
-    DSPManager \
-    libcyanogen-dsp
 	
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
